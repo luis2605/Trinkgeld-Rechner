@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+/* Layout */
+
+.container {
+  max-width: 375px;
+  background-color: hsl(185, 41%, 84%);
+  margin: 0 auto;
+}
+
+.container-calculator-display {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 4em;
+}
+
+.container-calculator {
+  padding: 1em;
+  
+}
+img {
+  width: 100%;
+}
+figure {
+  margin-top: 0.5em;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 1.5rem;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+.icon-input {
+  display: flex;
+  justify-content: space-around;
+ 
+  background-color: hsl(189, 41%, 97%);
+  padding: 0.2em;
+}
+.select-tip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.6em 0;
+}
+
+.container-display {
+  background-color: hsl(183, 100%, 15%);
+  padding: 1.5em;
+  padding-bottom: 2em;
+  border-radius: 5px;
+}
+
+.tip-amount {
+  display: flex;
+  justify-content: space-between;
+}
+.tip-amount-person {
+  flex: 8%;
+  color: white;
+}
+.total {
+  flex: 70%;
+  text-align: right;
+  color: hsl(172, 67%, 45%);
+  font-size: 2em;
+  font-weight: 700;
+}
+.total-to-pay {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.reset {
+  width: auto;
+  margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+/* Typo */
+
+h1 {
+  color: hsl(183, 100%, 15%);
+  padding: 1em 1em;
+  text-align: center;
+}
+p {
+  color: hsl(184, 14%, 56%);
+  font-weight: 400;
+  margin: 0.5em 0;
+  margin-bottom: 0.5em;
+}
+
+/* Buttons */
+.btn {
+  width: 6.9em;
+  font-family: "Space Mono", monospace;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  text-align: center;
+}
+#custom-btn {
+  width: 4.9em;
+  padding: 0.2em 1em;
+  text-align: center;
+  font-weight: 700;
+}
+.reset-btn {
+  padding: 0.5em 9em;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  background-color: hsl(172, 67%, 45%);
+  text-decoration: none;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+/* hover-focus states */
+.btn:hover, .btn:focus,.reset-btn:hover,.reset-btn:focus{
+    background: hsl(185, 41%, 84%);
+}
+
+/* Auxiliary Classes */
+.small-text {
+  font-weight: 700;
+  font-size: 0.8em;
+  color: hsl(184, 14%, 56%);
+}
+.orange{
+    color: orange;
+}
+.orange-border{
+    border: 1px solid orange;
+}
